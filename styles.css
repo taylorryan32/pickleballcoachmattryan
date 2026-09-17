@@ -1,0 +1,48 @@
+/**
+ * Matt Ryan Pickleball — theme tokens
+ * -----------------------------------
+ * Edit the values below to change colors site-wide (Tailwind classes like
+ * bg-moss-800, text-sand-50, border-moss-200, etc. all read from these).
+ *
+ * Format: space-separated RGB numbers (0–255), no "rgb()" — needed for
+ * Tailwind opacity modifiers (e.g. bg-moss-500/50).
+ */
+
+:root {
+  /* ----- Neutrals (warm sand / paper) ----- */
+  --color-sand-50: 250 249 247;
+  --color-sand-100: 243 241 236;
+  --color-sand-200: 232 228 219;
+  --color-sand-300: 212 206 194;
+
+  /* ----- Brand green (moss) — main accent ----- */
+  --color-moss-50: 244 247 244;
+  --color-moss-100: 227 235 228;
+  --color-moss-200: 197 212 201;
+  --color-moss-300: 168 184 168;
+  --color-moss-400: 122 150 128;
+  --color-moss-500: 90 130 100;
+  --color-moss-600: 74 107 85;
+  --color-moss-700: 61 90 71;
+  --color-moss-800: 51 74 61;
+  --color-moss-900: 44 63 52;
+
+  /* ----- Optional: quick semantic aliases (use in custom CSS only) ----- */
+  --color-page-bg: var(--color-sand-50);
+  --color-brand: var(--color-moss-800);
+  --color-brand-hover: var(--color-moss-900);
+  --color-accent-soft: var(--color-moss-100);
+
+  /* ----- Typography (change fonts here if you swap Google Fonts in index.html) ----- */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+
+  /* ----- Misc ----- */
+  --radius-card: 1rem;
+  --shadow-brand: 0 10px 40px -10px rgba(59, 87, 71, 0.12);
+}
+
+/* Default body font (matches Tailwind `font-sans` via theme above) */
+body {
+  font-family: var(--font-sans);
+}
